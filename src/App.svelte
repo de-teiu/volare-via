@@ -11,8 +11,8 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .bora {
     width: 300px;
@@ -21,8 +21,8 @@
   }
   .bullet-base {
     position: absolute;
-    top:50%;
-    left:50%;
+    top:120px;
+    left:150px;
     z-index: 0;
   }
 
@@ -64,8 +64,8 @@
     }
   }
 
-  $bulletSpeed: 400px;
-  @for $i from 0 through 15-1 {
+  $bulletSpeed: 100vw;
+  @for $i from 0 through 30-1 {
     $deg: random($rotateRange) + $startDeg;
     #bullet-#{$i} {
       @keyframes bullet-anime-#{$i} {
